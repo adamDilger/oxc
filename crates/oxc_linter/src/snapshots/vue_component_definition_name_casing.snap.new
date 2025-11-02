@@ -1,0 +1,12 @@
+---
+source: crates/oxc_linter/src/tester.rs
+assertion_line: 413
+---
+  ⚠ eslint-plugin-vue(component-definition-name-casing): Should be an imperative statement about what is wrong
+   ╭─[component_definition_name_casing.tsx:3:20]
+ 2 │                     new Vue({
+ 3 │                       name: 'foo!bar'
+   ·                             ─────────
+ 4 │                     })
+   ╰────
+  help: Should be a command-like statement that tells the user how to fix the issue

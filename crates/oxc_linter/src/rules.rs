@@ -650,6 +650,7 @@ pub(crate) mod node {
 }
 
 pub(crate) mod vue {
+    pub mod component_definition_name_casing;
     pub mod define_emits_declaration;
     pub mod define_props_declaration;
     pub mod define_props_destructuring;
@@ -1266,6 +1267,7 @@ oxc_macros::declare_all_lint_rules! {
     vitest::prefer_to_be_object,
     vitest::prefer_to_be_truthy,
     vitest::require_local_test_context_for_concurrent_snapshots,
+    vue::component_definition_name_casing,
     vue::define_emits_declaration,
     vue::define_props_declaration,
     vue::define_props_destructuring,
